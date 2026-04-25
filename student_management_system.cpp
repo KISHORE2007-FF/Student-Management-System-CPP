@@ -31,7 +31,6 @@ public:
     }
 };
 
-// Add Student
 void addStudent() {
     Student s;
     ofstream file("students.dat", ios::binary | ios::app);
@@ -41,7 +40,6 @@ void addStudent() {
     cout << "Student added successfully!\n";
 }
 
-// Display All Students
 void displayAll() {
     Student s;
     ifstream file("students.dat", ios::binary);
@@ -54,7 +52,6 @@ void displayAll() {
     file.close();
 }
 
-// Search Student
 void searchStudent() {
     int id;
     bool found = false;
@@ -80,7 +77,6 @@ void searchStudent() {
         cout << "Student not found!\n";
 }
 
-// Update Student
 void updateStudent() {
     int id;
     bool found = false;
@@ -112,7 +108,6 @@ void updateStudent() {
         cout << "Student not found!\n";
 }
 
-// Delete Student
 void deleteStudent() {
     int id;
     bool found = false;
@@ -144,7 +139,6 @@ void deleteStudent() {
         cout << "Student not found!\n";
 }
 
-// Main Menu
 int main() {
     int choice;
 
